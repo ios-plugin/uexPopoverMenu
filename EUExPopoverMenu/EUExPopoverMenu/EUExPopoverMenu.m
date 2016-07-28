@@ -86,8 +86,8 @@
     PopoverView *pop = [[PopoverView alloc]initWithPoint:CGPointMake(x, y) titles:titles images:images Direction:direction textSize:textSize backgroundColor:bgColor dividerColor:dividerColor textColor:textColor];
     pop.selectRowAtIndex = ^(NSInteger index){
         NSLog(@"select index:%ld", (long)index);
-        NSString *str = [NSString stringWithFormat:@"%ld",index];
-        NSString *jsString = [NSString stringWithFormat:@"uexPopoverMenu.cbOpenPopoverMenu('%@');",str];
+        NSString *str = [NSString stringWithFormat:@"%ld",(long)index];
+        NSString *jsString = [NSString stringWithFormat:@"uexPopoverMenu.cbItemSelected('%@');",str];
         [EUtility brwView:meBrwView evaluateScript:jsString];
     };
     [pop show];
