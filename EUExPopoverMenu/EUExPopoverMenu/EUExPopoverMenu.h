@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EUExBase.h"
+#import <AppCanKit/AppCanKit.h>
 @interface EUExPopoverMenu : EUExBase
 @property (nonatomic, retain) NSMutableDictionary *jsonDict;
 @end

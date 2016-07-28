@@ -9,7 +9,6 @@
 #import "EUExPopoverMenu.h"
 #import <UIKit/UIKit.h>
 #import "EUtility.h"
-#import "JSON.h"
 #import "PopoverView.h"
 @interface EUExPopoverMenu()
 @property(nonatomic,strong) UIButton *containerButton;
@@ -18,22 +17,15 @@
 
 @end
 @implementation EUExPopoverMenu
--(id)initWithBrwView:(EBrowserView *) eInBrwView {
-    if (self = [super initWithBrwView:eInBrwView]) {
-        
-    }
-    return self;
-}
-
 
 -(void)openPopoverMenu:(NSMutableArray *)inArguments {
     
-    
+    ACJSFunctionRef *func = JSFunctionArg(inArguments.lastObject);
     NSString *jsonStr = nil;
     if (inArguments.count > 0) {
         
         jsonStr = [inArguments objectAtIndex:0];
-        self.jsonDict = [jsonStr JSONValue];//将JSON类型的字符串转化为可变字典
+        self.jsonDict = [jsonStr ac_JSONValue];//将JSON类型的字符串转化为可变字典
         
     }else{
         return;
@@ -76,7 +68,7 @@
     for (NSDictionary *dic in itemsArr) {
         [titles addObject:dic[@"text"]];
         if (dic[@"icon"]) {
-            NSString *imagePath = [EUtility getAbsPath:meBrwView path:dic[@"icon"]];
+            NSString *imagePath = [self absPath:dic[@"icon"]];
             [images addObject:imagePath];
         }else{
             images = nil;
@@ -86,9 +78,11 @@
     PopoverView *pop = [[PopoverView alloc]initWithPoint:CGPointMake(x, y) titles:titles images:images Direction:direction textSize:textSize backgroundColor:bgColor dividerColor:dividerColor textColor:textColor];
     pop.selectRowAtIndex = ^(NSInteger index){
         NSLog(@"select index:%ld", (long)index);
-        NSString *str = [NSString stringWithFormat:@"%ld",(long)index];
-        NSString *jsString = [NSString stringWithFormat:@"uexPopoverMenu.cbItemSelected('%@');",str];
-        [EUtility brwView:meBrwView evaluateScript:jsString];
+        NSString *str = [NSString stringWithFormat:@"%ld",index];
+        //NSString *jsString = [NSString stringWithFormat:@"uexPopoverMenu.cbItemSelected('%@');",str];
+        //[EUtility brwView:meBrwView evaluateScript:jsString];
+        [self.webViewEngine callbackWithFunctionKeyPath:@"uexPopoverMenu.cbItemSelected" arguments:ACArgsPack(str)];
+        [func executeWithArguments:ACArgsPack(@(index))];
     };
     [pop show];
     
