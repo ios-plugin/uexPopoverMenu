@@ -21,11 +21,9 @@
 -(void)openPopoverMenu:(NSMutableArray *)inArguments {
     
     ACJSFunctionRef *func = JSFunctionArg(inArguments.lastObject);
-    NSString *jsonStr = nil;
     if (inArguments.count > 0) {
-        
-        jsonStr = [inArguments objectAtIndex:0];
-        self.jsonDict = [jsonStr ac_JSONValue];//将JSON类型的字符串转化为可变字典
+        ACArgsUnpack(NSDictionary *dic) = inArguments;
+        self.jsonDict = dic;
         
     }else{
         return;
