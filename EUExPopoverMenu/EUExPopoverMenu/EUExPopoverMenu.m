@@ -20,7 +20,6 @@
 
 -(void)openPopoverMenu:(NSMutableArray *)inArguments {
     
-    ACJSFunctionRef *func = JSFunctionArg(inArguments.lastObject);
     if (inArguments.count > 0) {
         ACArgsUnpack(NSDictionary *dic) = inArguments;
         self.jsonDict = dic;
@@ -80,7 +79,7 @@
         //NSString *jsString = [NSString stringWithFormat:@"uexPopoverMenu.cbItemSelected('%@');",str];
         //[EUtility brwView:meBrwView evaluateScript:jsString];
         [self.webViewEngine callbackWithFunctionKeyPath:@"uexPopoverMenu.cbItemSelected" arguments:ACArgsPack(str)];
-        [func executeWithArguments:ACArgsPack(@(index))];
+        [self.webViewEngine callbackWithFunctionKeyPath:@"uexPopoverMenu.onItemClicked" arguments:ACArgsPack(@(index))];
     };
     [pop show];
     
