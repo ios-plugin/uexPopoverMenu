@@ -9,8 +9,22 @@
 /* Begin PBXBuildFile section */
 		0947C1251C4DE7FC006B15D4 /* EUExPopoverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0947C1241C4DE7FC006B15D4 /* EUExPopoverMenu.m */; };
 		096C00321C853DC700779E40 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096C00271C853DC700779E40 /* PopoverView.m */; };
+		4200089B1D99FDAB00849BAD /* Masonry.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4246FBE31D9904BD00858E4C /* Masonry.framework */; };
 		4246FBE41D9904BD00858E4C /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4246FBE31D9904BD00858E4C /* Masonry.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4200089A1D99FDA400849BAD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				4200089B1D99FDAB00849BAD /* Masonry.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0947C11F1C4DE7FC006B15D4 /* libuexPopoverMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexPopoverMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +134,7 @@
 			buildPhases = (
 				0947C11B1C4DE7FC006B15D4 /* Sources */,
 				0947C11C1C4DE7FC006B15D4 /* Frameworks */,
+				4200089A1D99FDA400849BAD /* CopyFiles */,
 			);
 			buildRules = (
 			);
