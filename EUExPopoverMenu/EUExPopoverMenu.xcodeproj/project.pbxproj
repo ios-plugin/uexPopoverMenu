@@ -9,8 +9,13 @@
 /* Begin PBXBuildFile section */
 		0947C1251C4DE7FC006B15D4 /* EUExPopoverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0947C1241C4DE7FC006B15D4 /* EUExPopoverMenu.m */; };
 		096C00321C853DC700779E40 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096C00271C853DC700779E40 /* PopoverView.m */; };
+<<<<<<< HEAD
 		4200089B1D99FDAB00849BAD /* Masonry.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4246FBE31D9904BD00858E4C /* Masonry.framework */; };
 		4246FBE41D9904BD00858E4C /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4246FBE31D9904BD00858E4C /* Masonry.framework */; };
+=======
+		218437001D3CBF47006B8B67 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218436FF1D3CBF47006B8B67 /* Masonry.framework */; };
+		218437021D3CBFED006B8B67 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218437011D3CBFED006B8B67 /* AppCanKit.framework */; };
+>>>>>>> origin/dev-4.0
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +35,7 @@
 		0947C11F1C4DE7FC006B15D4 /* libuexPopoverMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexPopoverMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0947C1221C4DE7FC006B15D4 /* EUExPopoverMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExPopoverMenu.h; sourceTree = "<group>"; };
 		0947C1241C4DE7FC006B15D4 /* EUExPopoverMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUExPopoverMenu.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		096C00021C853DC700779E40 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		096C00031C853DC700779E40 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
 		096C00041C853DC700779E40 /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
@@ -39,12 +45,18 @@
 		096C00081C853DC700779E40 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		096C00091C853DC700779E40 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		096C000A1C853DC700779E40 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+=======
+>>>>>>> origin/dev-4.0
 		096C00261C853DC700779E40 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
 		096C00271C853DC700779E40 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
-		096CFFFD1C853D9B00779E40 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		096CFFFE1C853D9B00779E40 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		096CFFFF1C853D9B00779E40 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		4246FBE31D9904BD00858E4C /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+=======
+		218436FF1D3CBF47006B8B67 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
+		218437011D3CBFED006B8B67 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
+>>>>>>> origin/dev-4.0
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				4246FBE41D9904BD00858E4C /* Masonry.framework in Frameworks */,
+=======
+				218437021D3CBFED006B8B67 /* AppCanKit.framework in Frameworks */,
+				218437001D3CBF47006B8B67 /* Masonry.framework in Frameworks */,
+>>>>>>> origin/dev-4.0
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +106,13 @@
 		096C00001C853DC700779E40 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				4246FBE31D9904BD00858E4C /* Masonry.framework */,
 				096C00011C853DC700779E40 /* JSON */,
+=======
+				218437011D3CBFED006B8B67 /* AppCanKit.framework */,
+				218436FF1D3CBF47006B8B67 /* Masonry.framework */,
+>>>>>>> origin/dev-4.0
 				096C00261C853DC700779E40 /* PopoverView.h */,
 				096C00271C853DC700779E40 /* PopoverView.m */,
 			);
@@ -98,6 +120,7 @@
 			path = EUExPopoverMenu/sourceCode;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		096C00011C853DC700779E40 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +137,11 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> origin/dev-4.0
 		096CFFFC1C853D9B00779E40 /* engineHeader */ = {
 			isa = PBXGroup;
 			children = (
-				096CFFFD1C853D9B00779E40 /* EUExBase.h */,
 				096CFFFE1C853D9B00779E40 /* EUExBaseDefine.h */,
 				096CFFFF1C853D9B00779E40 /* EUtility.h */,
 			);
